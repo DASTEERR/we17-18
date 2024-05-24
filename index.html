@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleHome - Фирменный магазин Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AppleHome</h1>
+        <p>Фирменный магазин Apple</p>
+    </header>
+    <main>
+        <h2>Большой ассортимент техники Aplle</h2>
+        <div class="filters">
+            <label for="priceRange">Цена: <span id="priceValue">500000</span> рублей</label>
+            <input type="range" id="priceRange" min="10000" max="300000" value="50000" step="5000" oninput="updatePriceValue()">
+            <button onclick="filterProducts('favorite')">Показать избранное</button>
+            <button onclick="filterProducts('new')">Показать Новинки</button>
+            <button onclick="filterProducts('all')">Показать всё</button>
+        </div>
+        <div class="product-gallery">
+            <div class="product" data-price="50000" data-favorite="false" data-new="true">
+                <img src="apple1.jpg" alt="apple1">
+                <h3>Apple iPhone 14 Pro Max</h3>
+                <p>Это новый флагманский смартфон от компании Apple.</p>
+                <p>Цена: 105790 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+                <span class="new-flag">Новинка</span>
+            </div>
+            <div class="product" data-price="40000" data-favorite="false" data-new="false">
+                <img src="apple2.jpg" alt="apple2">
+                <h3>Apple iPad Pro 12.9 M2</h3>
+                <p>Для нового iPad Pro Apple разработала процессор М2.</p>
+                <p>Цена: 36290 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+            </div>
+            <div class="product" data-price="30000" data-favorite="false" data-new="true">
+                <img src="apple3.jpg" alt="apple2">
+                <h3>Apple Watch Ultra</h3>
+                <p>C титановым корпусом созданы для самых увлеченных спортсменов.</p>
+                <p>Цена: 78790 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+                <span class="new-flag">Новинка</span>
+            </div>
+            <div class="product" data-price="60000" data-favorite="false" data-new="false">
+                <img src="apple4.jpg" alt="apple4">
+                <h3>Apple Macbook Pro 14 Late 2021</h3>
+                <p>Сверхмощный, быстрый и удобный ноутбук для любых задач.</p>
+                <p>Цена: 85990 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+            </div>
+            <div class="product" data-price="70000" data-favorite="false" data-new="true">
+                <img src="apple5.jpg" alt="apple5">
+                <h3>Apple AirPods Max</h3>
+                <p>Это практичность, надежность и компактность.</p>
+                <p>Цена: 49490 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+                <span class="new-flag">Новинка</span>
+            </div>
+            <div class="product" data-price="20000" data-favorite="false" data-new="false">
+                <img src="apple6.jpg" alt="apple6">
+                <h3>Apple iMac 24" Retina 4,5K, M1</h3>
+                <p>Выделяется на любом фоне. Идеально впишется в вашу жизнь.</p>
+                <p>Цена: 139 990 рублей</p>
+                <span class="favorite-icon" onclick="toggleFavorite(this)">&#9734;</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

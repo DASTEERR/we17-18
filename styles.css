@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Arial', sans-serif; /* Более чистый и современный шрифт */
+    background-color: #fff; /* Светлый фон для чистоты и простоты */
+    color: #333; /* Тёмный текст для контраста */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f7; /* Светлый фон для заголовка */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #0071e3; /* Синий цвет для заголовков */
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #666; /* Светло-серый цвет текста */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #0071e3; /* Синий цвет для подзаголовков */
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    color: #333; /* Тёмный текст для контраста */
+}
+
+.filters button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #0071e3; /* Синий фон для кнопок */
+    border: none;
+    color: #fff; /* Белый текст на кнопках */
+    cursor: pointer;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f0f0f0; /* Светло-серый фон для продуктов */
+    border: 1px solid #ddd; /* Светло-серая граница */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: #0071e3; /* Синий цвет для названий продуктов */
+}
+
+.product p {
+    margin: 10px 0;
+    color: #666; /* Светло-серый цвет текста */
+}
+
+.favorite-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.favorite-icon.favorite {
+    color: #0071e3; /* Синий цвет для избранного */
+}
+
+.new-flag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000; /* Красный флаг для новинок */
+    color: #ffffff; /* Белый текст на флагах */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
